@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Koetai — SPARQL tooling for the life sciences</title>
+    <meta
+      name="description"
+      content="Koetai builds open SPARQL tooling for life-science researchers: a contribution desktop, a curated examples corpus, and a multi-tenant endpoint platform."
+    />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='28'%3E📡%3C/text%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="masthead">
+        <h1>Koetai</h1>
+        <p class="tagline">
+          Open SPARQL tooling for life-science researchers — built on ORCID
+          identity, federated endpoints, and community-curated examples.
+        </p>
+      </header>
+
+      <section class="cards">
+        <article class="card">
+          <header>
+            <h2>SPARQL desktop</h2>
+            <p class="card-sub">Contribute SPARQL examples without a GitHub account.</p>
+          </header>
+          <p>
+            A browser app that lets researchers sign in with their ORCID iD,
+            write or refine a SPARQL query against any endpoint in YummyData
+            (with proxy support for HTTP/no-CORS targets), and submit working
+            examples — or LLM-assisted requests for an expert — to the
+            <code>koetai/sparql-examples</code> repository.
+          </p>
+          <ul class="features">
+            <li>YASGUI editor + sparqljs keyword extraction</li>
+            <li>Curator role with PR-driven publishing</li>
+            <li>Affiliation capture with ROR identifiers</li>
+          </ul>
+          <div class="card-actions">
+            <a class="primary" href="https://koetai.github.io/sparql-desktop/">
+              Open the app
+            </a>
+            <a class="secondary" href="https://github.com/Koetai/sparql-desktop">
+              Source on GitHub
+            </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <header>
+            <h2>SPARQL examples</h2>
+            <p class="card-sub">Curated, queryable, schema-checked example corpus.</p>
+          </header>
+          <p>
+            A fork of
+            <a href="https://github.com/sib-swiss/sparql-examples">sib-swiss/sparql-examples</a>
+            that aggregates the SPARQL queries submitted through the desktop
+            and refined by curators. Every query lives as a self-describing
+            Turtle file with inline prefixes; CI validates each example
+            against an RDF4J SPARQL parser.
+          </p>
+          <ul class="features">
+            <li>Multi-endpoint (UniProt, Wikidata, IDR, …)</li>
+            <li>Issue-driven, PR-reviewed contribution</li>
+            <li>Jekyll-rendered example browser</li>
+          </ul>
+          <div class="card-actions">
+            <a class="primary" href="https://koetai.github.io/sparql-examples/">
+              Browse examples
+            </a>
+            <a class="secondary" href="https://github.com/Koetai/sparql-examples">
+              Source on GitHub
+            </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <header>
+            <h2>Koetai platform</h2>
+            <p class="card-sub">FAIR SPARQL endpoints, multi-tenant.</p>
+          </header>
+          <p>
+            A multi-tenant QLever deployment that lets research groups host
+            their own SPARQL endpoint with ORCID-gated write access,
+            ShEx/SHACL validation, and SPARQLList-style request bundling.
+            Designed to make publishing a SPARQL endpoint as light as
+            publishing a dataset.
+          </p>
+          <ul class="features">
+            <li>Per-tenant QLever instance</li>
+            <li>ORCID auth for write operations</li>
+            <li>ShEx/SHACL shape validation</li>
+          </ul>
+          <div class="card-actions">
+            <a class="primary" href="https://github.com/Koetai/koetai-platform">
+              Source on GitHub
+            </a>
+          </div>
+        </article>
+      </section>
+
+      <footer class="site-footer">
+        <p>
+          Maintained by the
+          <a href="https://github.com/Koetai">Koetai</a> open-source
+          collective. Issues, suggestions, and pull requests welcome on any of
+          the repositories.
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
